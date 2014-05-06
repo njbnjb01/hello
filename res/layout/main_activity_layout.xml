@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_2"
+    android:padding="10dp" >
+
+    <!-- 左侧 start -->
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/cuxiao"
+            style="@style/fenlei_button_style"
+            android:background="@drawable/cuxiao_bg" />
+
+        <Button
+            android:id="@+id/rexiao"
+            style="@style/fenlei_button_style"
+            android:background="@drawable/rexiao_bg" />
+
+        <Button
+            android:id="@+id/tuijian"
+            style="@style/fenlei_button_style"
+            android:background="@drawable/tuijian_bg" />
+    </LinearLayout>
+    <!-- 左侧 end -->
+    <!-- 中间 start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/myviewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7" >
+
+                    <Button
+                        android:id="@+id/front_page"
+                        style="@style/page_button_style"
+                        android:background="@drawable/frontpage_btn_selector"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="上一页" />
+
+                    <LinearLayout
+                        android:id="@+id/point_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/front_page"
+                        android:layout_alignTop="@+id/front_page"
+                        android:layout_toLeftOf="@+id/next_page"
+                        android:layout_toRightOf="@+id/front_page"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/next_page"
+                        style="@style/page_button_style"
+                        android:background="@drawable/nextpage_btn_selector"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="下一页" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 中间 end -->
+    <!-- 右侧 start -->
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/shouye"
+            style="@style/home_button_style"
+            android:text="首页" />
+
+        <Button
+            android:id="@+id/jisheng"
+            style="@style/home_button_style"
+            android:text="计生用品" />
+
+        <Button
+            android:id="@+id/qiju"
+            style="@style/home_button_style"
+            android:text="器具产品" />
+
+        <Button
+            android:id="@+id/runhua"
+            style="@style/home_button_style"
+            android:text="润滑系列" />
+
+        <Button
+            android:id="@+id/waiyong"
+            style="@style/home_button_style"
+            android:text="外用系列" />
+
+        <Button
+            android:id="@+id/riyong"
+            style="@style/home_button_style"
+            android:text="日用百货" />
+
+        <Button
+            android:id="@+id/xiaoshangpin"
+            style="@style/home_button_style"
+            android:text="小商品" />
+
+        <Button
+            android:id="@+id/zhaoling"
+            android:layout_marginTop="60dp"
+            style="@style/home_button_style"
+            android:text="找零" />
+        <TextView
+            android:id="@+id/available_money_text"
+            android:layout_marginTop="20dp"
+            style="@style/text_style"
+            android:text="￥10" />
+
+        <!-- <Button
+            android:id="@+id/back"
+            style="@style/home_button_style"
+            android:text="返回" /> -->
+    </LinearLayout>
+    <!-- 右侧 end -->
+
+</LinearLayout>
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="	"
+    android:textSize="40sp"
+    android:padding="40dp"
+    android:id="@+id/exit"/>
+</FrameLayout>

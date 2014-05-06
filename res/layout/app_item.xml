@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.serviatech.test"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/ivAppIcon"
+        android:layout_width="172px"
+        android:layout_height="164px"
+        android:layout_gravity="center"
+        android:background="@drawable/item_bg"
+        android:scaleType="fitCenter" />
+
+    <com.serviatech.test.widget.GifMovieView
+        android:id="@+id/gifIcon"
+        android:layout_width="172px"
+        android:layout_height="164px"
+        android:layout_gravity="center"
+        android:background="@drawable/item_bg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvAppId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:text="APPID"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/tvAppPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:text="APPPrice"
+            android:textColor="#FFFF" />
+    </LinearLayout>
+
+</LinearLayout>

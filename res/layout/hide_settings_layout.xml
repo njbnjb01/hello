@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:padding="50dp" >
+    <EditText 
+        android:id="@+id/screen_saver_time"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:inputType="number"
+    	android:singleLine="true"
+    	android:hint="请输入屏保时间  单位为秒"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:layout_marginTop="30dp" >
+  	<Button 
+  	    android:id="@+id/save_btn"
+      	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	
+    	android:layout_alignParentLeft="true"
+    	android:background="@drawable/buy_selector"
+    	android:textSize="30sp"
+    	android:textColor="#FFFFFF"
+    	android:text="保存"/>
+  	<Button 
+  	    android:id="@+id/quit_btn"
+      	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:background="@drawable/buy_selector"
+    	android:textSize="30sp"
+    	android:textColor="#FFFFFF"
+    	android:text="退出"/>
+    </RelativeLayout>
+  	<Button 
+  	    android:id="@+id/exit_btn"
+      	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="30dp"
+    	android:layout_gravity="center"
+    	android:background="@drawable/buy_selector"
+    	android:textSize="30sp"
+    	android:textColor="#FFFFFF"
+    	android:text="退出程序"/>
+</LinearLayout>
+
+

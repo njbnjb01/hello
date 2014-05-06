@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/grid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/myviewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7" >
+
+                    <Button
+                        android:id="@+id/front_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="上一页" />
+
+                    <LinearLayout
+                        android:id="@+id/point_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/front_page"
+                        android:layout_alignTop="@+id/front_page"
+                        android:layout_toLeftOf="@+id/next_page"
+                        android:layout_toRightOf="@+id/front_page"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/next_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="下一页" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/right_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="促销产品" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热销产品" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐产品" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:gravity="bottom" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+            android:text="首页" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+            android:text="计生用品" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+            android:text="器具产品" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+            android:text="润滑系列" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+            android:text="外用系列" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+            android:text="日用百货" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+            android:text="小商品" />
+    </LinearLayout>
+
+</LinearLayout>

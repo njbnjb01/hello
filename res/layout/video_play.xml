@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/mSurfaceView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </SurfaceView>
+    <ImageView 
+        android:id="@+id/iv_animation_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/main_more_vtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text=" Android TextView跑马灯效果代码     Android TextView跑马灯效果代码      Android TextView跑马灯效果代码                          Android TextView跑马灯效果代码     Android TextView跑马灯效果代码      Android TextView跑马灯效果代码                          Android TextView跑马灯效果代码     Android TextView跑马灯效果代码      Android TextView跑马灯效果代码                          Android TextView跑马灯效果代码     Android TextView跑马灯效果代码      Android TextView跑马灯效果代码                          "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF00FF"
+        android:textSize="50sp" />
+
+</FrameLayout>

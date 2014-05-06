@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/main_more_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text=" Android TextView跑马灯效果代码     Android TextView跑马灯效果代码      Android TextView跑马灯效果代码                          Android TextView跑马灯效果代码     Android TextView跑马灯效果代码      Android TextView跑马灯效果代码                          Android TextView跑马灯效果代码     Android TextView跑马灯效果代码      Android TextView跑马灯效果代码                          Android TextView跑马灯效果代码     Android TextView跑马灯效果代码      Android TextView跑马灯效果代码                          "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF00FF"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="50sp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+       
+        />
+</LinearLayout>

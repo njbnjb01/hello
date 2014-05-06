@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg_1"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="110dp"
+        android:paddingLeft="150dp"
+        android:paddingRight="80dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/infoIcon"
+                android:layout_width="505px"
+                android:layout_height="507px"
+                android:paddingTop="3dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/item_detail_bg"  />
+            <com.serviatech.test.widget.GifMovieView
+                android:id="@+id/infoGif"
+                android:layout_width="505px"
+                android:layout_height="507px"
+                android:paddingTop="0.5dp"
+                android:background="@drawable/item_detail_bg"  />
+
+            <ScrollView 
+                android:id="@+id/info_scroll"
+                android:layout_width="291px"
+                android:layout_height="507px"
+                android:padding="5dp"
+                android:background="@drawable/desc_bg"
+                android:layout_marginLeft="-5dp" >
+            <TextView
+                android:id="@+id/infoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="20sp"
+                    android:text="产品名称" />
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp"
+                    android:text="巅峰一号" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:text="价格" />
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp" />
+            </LinearLayout>
+
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:text="余 	额" />
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp" />
+                <Button
+                    android:id="@+id/detail_zhaoling_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:background="@drawable/buy_selector"
+                    android:text="找零" />
+                <Button
+                    android:id="@+id/buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:background="@drawable/buy_selector"
+                    android:text="购买" />
+         </LinearLayout>
+
+                <!--
+             <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="返回" />
+                -->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="25dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"
+        android:gravity="center_vertical"
+        android:layout_weight="7" >
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_selector"
+            android:layout_alignParentLeft="true" />
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="返 回"
+            android:background="#00FFFFFF"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"  />
+    </RelativeLayout>
+
+</LinearLayout>
